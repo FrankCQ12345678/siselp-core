@@ -31,6 +31,21 @@ public class Persona {
     public Persona() {
     }
 
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "idpersona=" + idpersona +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad='" + edad + '\'' +
+                ", sexo='" + sexo + '\'' +
+                ", dni='" + dni + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono='" + telefono + '\'' +
+                ", fechaNacimiento=" + fechaNacimiento +
+                '}';
+    }
+
     public Persona(Long idpersona, String nombre, String apellido, String edad, String sexo, String dni, String direccion, String telefono, Date fechaNacimiento) {
         this.idpersona = idpersona;
         this.nombre = nombre;
